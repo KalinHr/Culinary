@@ -1,0 +1,6 @@
+div class="buttons"
+  <a href="/appetizer">Предястия</a>
+  <a href="/">Основни ястия</a>
+  <a href="/dessert">Десерти</a>
+  <a href="/salad">Салати</a>
+  <a href="/drink">Питиета</a>

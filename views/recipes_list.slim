@@ -1,0 +1,6 @@
+- if @recipes.any?
+  ul
+    - @recipes.each do |recipe|
+      li <a href="/recipes/#{recipe.id}">#{recipe.title}</a>
+- else
+  p Няма намерени рецепти!

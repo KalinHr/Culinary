@@ -1,0 +1,15 @@
+require 'dm-core'
+require 'dm-migrations'
+
+DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/../recipes.db")
+
+class Recipe
+  include DataMapper::Resource
+  property :id, Serial
+  property :title, String
+  property :products, String
+  property :minutes, Integer
+  property :recipe, Text
+end
+
+DataMapper.finalize

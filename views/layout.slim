@@ -1,0 +1,18 @@
+doctype html
+html lang="en"
+  head
+    title = "Culinary"
+    meta charset="utf-8"
+    link rel="stylesheet" href="/styles.css"
+  body
+    div class="cutted"
+      header
+        h1 Рецепти
+      content
+        - if not session[:username].nil?
+          nav
+            == slim :nav
+        section
+          == yield
+      footer
+        p Рецепти © Всички права запазени.
